@@ -1,0 +1,29 @@
+{
+  "name": "engine-ai",
+  "version": "1.1.0",
+  "description": "",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "eng": "bin/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "chalk": "^5.3.0",
+    "cli-countdown": "^1.0.0",
+    "cli-table3": "^0.6.5",
+    "commander": "^12.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "figlet": "^1.7.0",
+    "inquirer": "^10.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "ora": "^8.1.0"
+  }
+}
