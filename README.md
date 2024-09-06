@@ -1,4 +1,4 @@
-# Engine Command Line Interphase
+# Engine Command Line Interface
 ![Start_Up_Image](./src/assets/welcome.png)
 
 ## Quickstart
