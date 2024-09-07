@@ -1,4 +1,4 @@
-const fs = require("fs")
+const fs = require("fs-extra")
 const path = require("path")
 const util = require("util");
 const { exec } = require("child_process")
@@ -39,9 +39,13 @@ root.render(
               process.chdir(path.join(process.cwd(), "../"));
 
               process.chdir(path.join(process.cwd(), "public"));
-              await execPromise(
-                `rm -rf favicon.ico logo192.png logo512.png robots.txt`
-              );
+              // await execPromise(
+              //   `rm -rf favicon.ico logo192.png logo512.png robots.txt`
+              // );
+              await fs.unlinkSync("favicon.ico");
+              await fs.unlinkSync("logo192.png");
+              await fs.unlinkSync("logo512.png");
+              await fs.unlinkSync("robots.txt");
 }
 
 module.exports = removeCra

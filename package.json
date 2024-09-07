@@ -1,18 +1,24 @@
 {
   "name": "engine-ai",
-  "version": "1.1.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "CLI tool for generating AI-powered project templates",
   "main": "bin/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "c": "node bin/index.js"
   },
   "bin": {
     "eng": "bin/index.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "CLI",
+    "AI",
+    "Google Generative AI",
+    "project templates"
+  ],
+  "author": "Sabre Alam",
   "license": "ISC",
   "dependencies": {
+    "@google/generative-ai": "^0.17.1",
     "bcrypt": "^5.1.1",
     "chalk": "^5.3.0",
     "cli-countdown": "^1.0.0",
@@ -22,8 +28,10 @@
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "figlet": "^1.7.0",
+    "fs-extra": "^11.2.0",
     "inquirer": "^10.2.0",
     "jsonwebtoken": "^9.0.2",
-    "ora": "^8.1.0"
+    "ora": "^8.1.0",
+    "shelljs": "^0.8.5"
   }
 }

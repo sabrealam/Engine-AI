@@ -8,7 +8,7 @@ const chooser = async (options) => {
       type: 'list',
       name: 'type',
       message: 'Select the project type:',
-      choices: ['react', 'express', "HTML"],
+      choices: ['react', 'express', "HTML", "Portfolio"],
       searchable: true,
       
     });

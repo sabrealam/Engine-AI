@@ -35,7 +35,7 @@ function createFolders(folders, rootDir) {
     const folderPath = path.join(rootDir, folder);
     if (!fs.existsSync(folderPath)) {
       fs.mkdirSync(folderPath, { recursive: true });
-      console.log(`Created folder: ${folderPath}`);
+      // console.log(`Created folder: ${folderPath}`);
     }
   });
 }
@@ -45,7 +45,7 @@ function createFiles(files, rootDir) {
   files.forEach(file => {
     const filePath = path.join(rootDir, file.name);
     fs.writeFileSync(filePath, file.content);
-    console.log(`Created file: ${filePath}`);
+    // console.log(`Created file: ${filePath}`);
   });
 }
 
@@ -60,7 +60,7 @@ function createExpressTemplate(projectName = "/") {
   createFolders(projectStructure.folders, projectRoot);
   createFiles(projectStructure.files, projectRoot);
 
-  console.log('Express project template created successfully!');
+  // console.log('Express project template created successfully!');
 }
 
 // Function to return server.js content
